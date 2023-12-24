@@ -12,7 +12,7 @@ This project focuses on secure token management using JSON Web Tokens (JWT) in c
 
 1. **Clone the Repository**: Begin by cloning this repository to your local machine using the following command:
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/vasubhalodi07/jwt-cookie-auth-express-react.git
     ```
 
 2. **Frontend Setup**:
