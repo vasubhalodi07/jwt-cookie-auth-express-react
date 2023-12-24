@@ -1,8 +1,44 @@
-# React + Vite
+# Secure Token Handling with JWT and Cookie Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project focuses on secure token management using JSON Web Tokens (JWT) in conjunction with cookie-based storage. Built with React, Express, and MongoDB, this system employs enhanced security measures, storing tokens in HTTP-only cookies.
 
-Currently, two official plugins are available:
+### Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Token Storage**: Secure storage of tokens in HTTP-only cookies.
+- **Refresh Token Mechanism**: When the access token expires, a server middleware triggers a 401 response, prompting the client-side to initiate a call to the refresh token API. This creates a new access token, securely stored in the cookie storage.
+- **Login Handling**: Upon logging in via the login API, the JWT token is stored in a cookie, and the login status is saved in local storage. The root page (`App.js`) retrieves the JWT token from the getToken API response, storing it in the Redux store for efficient state management.
+
+## Installation
+
+1. **Clone the Repository**: Begin by cloning this repository to your local machine using the following command:
+    ```bash
+    git clone <repository_url>
+    ```
+
+2. **Frontend Setup**:
+    - Navigate to the `frontend` directory:
+        ```bash
+        cd frontend
+        ```
+    - Install dependencies:
+        ```bash
+        npm install
+        ```
+    - Start the client server at `localhost:5173`:
+        ```bash
+        npm run dev
+        ```
+
+3. **Backend Setup**:
+    - Move to the `backend` directory:
+        ```bash
+        cd backend
+        ```
+    - Install required packages:
+        ```bash
+        npm install
+        ```
+    - Run the server at `localhost:8000`:
+        ```bash
+        npm start
+        ```
