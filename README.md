@@ -1,4 +1,4 @@
-# JWT Management with Cookies using React, Express, and MongoDB
+# JWT with Cookies using React, Express, and MongoDB
 
 This project focuses on secure token management using JSON Web Tokens (JWT) in conjunction with cookie-based storage. Built with React, Express, and MongoDB, this system employs enhanced security measures, storing tokens in HTTP-only cookies.
 
