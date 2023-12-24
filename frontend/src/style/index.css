@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  /* background-color: rgb(37, 33, 44); */
+  background-color: rgb(40, 40, 47);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+}
+
+.main-container {
+  width: 500px;
+  align-items: center;
+  text-align: center;
+}
+
+.title,
+.input_field,
+.btn {
+  padding-top: 15px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  width: 350px;
+  color: black;
+}
+
+.btn button {
+  padding: 7px;
+  width: 370px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2f69cc;
+  font-size: 17px;
+}
+
+.navigate {
+  padding: 5px 0px;
+  font-size: 14px;
+}
+
+.dashboard {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  padding: 20px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-routes {
+  display: flex;
+  gap: 30px;
+  background-color: transparent;
+}
+
+.link {
+  background-color: transparent;
+  color: rgb(37, 33, 44);
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-content {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 80%;
+}
+
+.content div {
+  padding: 10px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
